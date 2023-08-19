@@ -94,5 +94,3 @@ app.use('/401', notAlowedRoute);
 app.listen(5000,()=>{
     console.log("server is running (5000).");
 });
-// mongoose.connection.close().then(()=> console.log("mongoose connection closed"));
-// module.exports = app;
