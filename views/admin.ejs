@@ -1,0 +1,242 @@
+
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>News</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/styles.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+
+    <style>
+
+        body {
+            text-align: left;
+            behavior:url(script.htc);
+        }
+
+        #route {
+            color: rgb(39, 39, 39);
+        }
+
+        #route:hover{
+            color: rgb(125, 125, 125);
+        }
+
+        nav {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 20px;
+            letter-spacing: 4px;
+            height: 5rem;
+        }
+
+
+
+        form {
+            margin: 50px;
+            width: 900px;
+            
+        }
+
+        /* .form-holder {
+            margin-top: 130px;
+            margin-bottom: 200px;
+        } */
+
+        .main-container {
+            padding: 5%;
+            min-height: 500px;
+        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+  </head>
+
+
+<div class="container-fluid form-holder pb-0">
+
+  <header class="mb-auto">
+    <div>
+      
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="height: 100px;">
+        <a class="navbar-brand mx-5" id="Brand" href="/news"><strong class="h1" >News</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-target="#navbartogglerdemo02" data-bs-toggle="collapse" aria-controls="navbartogglerdemo02" aria-expanded="false" aria-label="toggle navigaition">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbartogglerdemo02">
+            <ul class="navbar-nav ms-auto mx-5" id="navbar-nav">
+                <li class="nav-item h5">
+                    <a class="nav-link" href="/logout" id="nav-items">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+  </header>
+
+  <div class="container-fluid form-holder" >
+
+    <form action="/admin/article" method="POST" id="searchForm">
+      <h2>Updating posts:</h2>
+      <%  errs.forEach((err)=>{ %>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <%= err %>
+       </div>      
+      <% }) %>
+
+      <% if (successDel_msg != ''){ %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <%= successDel_msg %>
+      </div>    
+      <% } %>
+
+      <% if (successUp_msg != ''){ %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <%= successUp_msg %>
+      </div>    
+      <% } %>
+
+      <%  pubErrs.forEach((err)=>{ %>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <%= err %>
+      </div>      
+      <% }) %>
+
+      <% if (successPub_msg != ''){ %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <%= successPub_msg %>
+      </div>    
+      <% } %>
+
+      <div class="input-group">
+        <button type="submit" class="btn btn-outline-success" >Search</button>
+        <input class="form-control bg-body-tertiary" type="text" placeholder="Enter articles title" id="searchBox" name="searchBox" >
+      </div>
+    </form>
+    
+      <form  method="POST" action="/admin?_method=PATCH" style="margin-bottom: 50px;">
+        <div class="input-group">
+            <span class="input-group-text">Title</span>
+            <input class="form-control bg-body-tertiary" type="text" name="titleToChange" value="<%= titleFound %>" >
+        </div>
+    
+        <div class="input-group">
+            <span class=""></span>
+            <textarea class="form-control bg-body-tertiary my-3" name="postToChange"  cols="30" rows="10" placeholder="Article"><%= postFound %></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-outline-success " formmethod="POST" formaction="/admin?_method=DELETE">Delete</button>
+        <button type="submit" class="btn btn-outline-success ">Update</button>
+      </form>
+    
+    </div>
+    
+    <form action="/admin" method="post">
+        <h2>Composing new post:</h2>
+        <div class="input-group">
+            <span class="input-group-text">Title</span>
+            <input class="form-control bg-body-tertiary" type="text" name="titleToPost" >
+        </div>
+        
+
+        <div class="input-group">
+            <span class=""></span>
+            <textarea class="form-control bg-body-tertiary my-3" name="articleToPost" id="pubText" cols="30" rows="10" placeholder="Compose..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-outline-success">Publish</button>
+    </form>
+
+</div>
+
+<script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
+</body>
+</html>

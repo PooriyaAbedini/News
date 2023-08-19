@@ -1,0 +1,40 @@
+body {
+    text-align: left;
+    behavior:url(script.htc);
+}
+
+#route {
+    color: rgb(39, 39, 39);
+}
+
+#route:hover{
+    color: rgb(125, 125, 125);
+}
+
+nav {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    height: 5rem;
+}
+
+
+
+form {
+    margin: 50px;
+    width: 900px;
+    
+}
+
+.form-holder {
+    margin-top: 130px;
+    margin-bottom: 200px;
+}
+
+.main-container {
+    padding: 5%;
+    min-height: 500px;
+}
+a:hover{
+    color: white;
+}
