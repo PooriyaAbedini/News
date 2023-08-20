@@ -23,9 +23,13 @@ router.get('/', async (req,res)=>{
 router.get('/:new', async (req,res)=>{
 
     const title = req.params.new;
+    try{
 
-    const specificNew = await Post.findOne({title: title});
-    res.render('specificNew', { article: specificNew});
+        const specificNew = await Post.findOne({title: title});
+         res.render('specificNew', { article: specificNew});
+
+    }catch(err){ console.log(err) }
+    
    
 
 }); 
